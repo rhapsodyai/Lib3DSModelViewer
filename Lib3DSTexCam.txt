@@ -1,0 +1,33 @@
+Camera X：-220
+Camera Y：550
+Camera Z：-10
+Center X：290
+Center Y：0
+Center Z：0
+Up X：0
+Up Y：1
+Up Z：0
+
+
+Camera X：50
+Camera X：50
+Camera Y：120
+Camera Z：-80
+Center X：-80
+Center Y：0
+Center Z：0
+Up X：0
+Up Y：1
+Up Z：0
+
+Current Camera Coordinates：
+Camera X：-30
+Camera Y：10
+Camera Z：-60
+Center X：0
+Center Y：10
+Center Z：0
+Up X：0
+Up Y：1
+Up Z：0
+

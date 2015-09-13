@@ -1,0 +1,93 @@
+# Project: OpenGL3DSDemo2
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -finput-charset=cp932 -fexec-charset=cp932
+CC   = gcc.exe -finput-charset=cp932 -fexec-charset=cp932
+WINDRES = windres.exe
+RES  = OpenGL3DSDemo2_private.res
+OBJ  = OpenGL3DSDemo2.o Camera.o lib3ds/lib3ds_atmosphere.o lib3ds/lib3ds_background.o lib3ds/lib3ds_camera.o lib3ds/lib3ds_chunk.o lib3ds/lib3ds_chunktable.o lib3ds/lib3ds_file.o lib3ds/lib3ds_io.o lib3ds/lib3ds_light.o lib3ds/lib3ds_material.o lib3ds/lib3ds_math.o lib3ds/lib3ds_matrix.o lib3ds/lib3ds_mesh.o lib3ds/lib3ds_node.o lib3ds/lib3ds_quat.o lib3ds/lib3ds_shadow.o lib3ds/lib3ds_track.o lib3ds/lib3ds_util.o lib3ds/lib3ds_vector.o lib3ds/lib3ds_viewport.o $(RES)
+LINKOBJ  = OpenGL3DSDemo2.o Camera.o lib3ds/lib3ds_atmosphere.o lib3ds/lib3ds_background.o lib3ds/lib3ds_camera.o lib3ds/lib3ds_chunk.o lib3ds/lib3ds_chunktable.o lib3ds/lib3ds_file.o lib3ds/lib3ds_io.o lib3ds/lib3ds_light.o lib3ds/lib3ds_material.o lib3ds/lib3ds_math.o lib3ds/lib3ds_matrix.o lib3ds/lib3ds_mesh.o lib3ds/lib3ds_node.o lib3ds/lib3ds_quat.o lib3ds/lib3ds_shadow.o lib3ds/lib3ds_track.o lib3ds/lib3ds_util.o lib3ds/lib3ds_vector.o lib3ds/lib3ds_viewport.o $(RES)
+LIBS =  -L"lib" -L"C:/Users/mia/Downloads/DxLib_GCC/プロジェクトに追加すべきファイル_GCC(Dev-cpp)用" C:/Dev-Cpp/lib/libglu32.a C:/Dev-Cpp/lib/libglut32.a C:/Dev-Cpp/lib/libopengl32.a  
+INCS =  -I"include"  -I"C:/Users/mia/Downloads/DxLib_GCC/プロジェクトに追加すべきファイル_GCC(Dev-cpp)用" 
+CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include"  -I"C:/Users/mia/Downloads/DxLib_GCC/プロジェクトに追加すべきファイル_GCC(Dev-cpp)用" 
+BIN  = OpenGL3DSDemo2.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before OpenGL3DSDemo2.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "OpenGL3DSDemo2.exe" $(LIBS)
+
+OpenGL3DSDemo2.o: OpenGL3DSDemo2.cpp
+	$(CPP) -c OpenGL3DSDemo2.cpp -o OpenGL3DSDemo2.o $(CXXFLAGS)
+
+Camera.o: Camera.cpp
+	$(CPP) -c Camera.cpp -o Camera.o $(CXXFLAGS)
+
+lib3ds/lib3ds_atmosphere.o: lib3ds/lib3ds_atmosphere.c
+	$(CPP) -c lib3ds/lib3ds_atmosphere.c -o lib3ds/lib3ds_atmosphere.o $(CXXFLAGS)
+
+lib3ds/lib3ds_background.o: lib3ds/lib3ds_background.c
+	$(CPP) -c lib3ds/lib3ds_background.c -o lib3ds/lib3ds_background.o $(CXXFLAGS)
+
+lib3ds/lib3ds_camera.o: lib3ds/lib3ds_camera.c
+	$(CPP) -c lib3ds/lib3ds_camera.c -o lib3ds/lib3ds_camera.o $(CXXFLAGS)
+
+lib3ds/lib3ds_chunk.o: lib3ds/lib3ds_chunk.c
+	$(CPP) -c lib3ds/lib3ds_chunk.c -o lib3ds/lib3ds_chunk.o $(CXXFLAGS)
+
+lib3ds/lib3ds_chunktable.o: lib3ds/lib3ds_chunktable.c
+	$(CPP) -c lib3ds/lib3ds_chunktable.c -o lib3ds/lib3ds_chunktable.o $(CXXFLAGS)
+
+lib3ds/lib3ds_file.o: lib3ds/lib3ds_file.c
+	$(CPP) -c lib3ds/lib3ds_file.c -o lib3ds/lib3ds_file.o $(CXXFLAGS)
+
+lib3ds/lib3ds_io.o: lib3ds/lib3ds_io.c
+	$(CPP) -c lib3ds/lib3ds_io.c -o lib3ds/lib3ds_io.o $(CXXFLAGS)
+
+lib3ds/lib3ds_light.o: lib3ds/lib3ds_light.c
+	$(CPP) -c lib3ds/lib3ds_light.c -o lib3ds/lib3ds_light.o $(CXXFLAGS)
+
+lib3ds/lib3ds_material.o: lib3ds/lib3ds_material.c
+	$(CPP) -c lib3ds/lib3ds_material.c -o lib3ds/lib3ds_material.o $(CXXFLAGS)
+
+lib3ds/lib3ds_math.o: lib3ds/lib3ds_math.c
+	$(CPP) -c lib3ds/lib3ds_math.c -o lib3ds/lib3ds_math.o $(CXXFLAGS)
+
+lib3ds/lib3ds_matrix.o: lib3ds/lib3ds_matrix.c
+	$(CPP) -c lib3ds/lib3ds_matrix.c -o lib3ds/lib3ds_matrix.o $(CXXFLAGS)
+
+lib3ds/lib3ds_mesh.o: lib3ds/lib3ds_mesh.c
+	$(CPP) -c lib3ds/lib3ds_mesh.c -o lib3ds/lib3ds_mesh.o $(CXXFLAGS)
+
+lib3ds/lib3ds_node.o: lib3ds/lib3ds_node.c
+	$(CPP) -c lib3ds/lib3ds_node.c -o lib3ds/lib3ds_node.o $(CXXFLAGS)
+
+lib3ds/lib3ds_quat.o: lib3ds/lib3ds_quat.c
+	$(CPP) -c lib3ds/lib3ds_quat.c -o lib3ds/lib3ds_quat.o $(CXXFLAGS)
+
+lib3ds/lib3ds_shadow.o: lib3ds/lib3ds_shadow.c
+	$(CPP) -c lib3ds/lib3ds_shadow.c -o lib3ds/lib3ds_shadow.o $(CXXFLAGS)
+
+lib3ds/lib3ds_track.o: lib3ds/lib3ds_track.c
+	$(CPP) -c lib3ds/lib3ds_track.c -o lib3ds/lib3ds_track.o $(CXXFLAGS)
+
+lib3ds/lib3ds_util.o: lib3ds/lib3ds_util.c
+	$(CPP) -c lib3ds/lib3ds_util.c -o lib3ds/lib3ds_util.o $(CXXFLAGS)
+
+lib3ds/lib3ds_vector.o: lib3ds/lib3ds_vector.c
+	$(CPP) -c lib3ds/lib3ds_vector.c -o lib3ds/lib3ds_vector.o $(CXXFLAGS)
+
+lib3ds/lib3ds_viewport.o: lib3ds/lib3ds_viewport.c
+	$(CPP) -c lib3ds/lib3ds_viewport.c -o lib3ds/lib3ds_viewport.o $(CXXFLAGS)
+
+OpenGL3DSDemo2_private.res: OpenGL3DSDemo2_private.rc lib3ds/lib3ds.rc 
+	$(WINDRES) -i OpenGL3DSDemo2_private.rc --input-format=rc -o OpenGL3DSDemo2_private.res -O coff 

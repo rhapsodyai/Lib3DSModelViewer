@@ -1,0 +1,29 @@
+
+Scaling
+---------------------
+L - Scale (Zoom Out)
+P - Scale (Zoom In)
+
+
+Camera
+----------------------
+Up - Move Camera +Z
+Down - Move Camera -Z
+Left - Move Camera -Y
+Right - Move Camera +Y
+Q - Move Camera +X
+A - Move Camera -X
+W - Move Frame -X
+S - Move Frame +X
+1 - Move Frame -Y
+2 - Move Frame +Y
+3 - Move Frame -Z
+4 - Move Frame +Z
+Spacebar - Print Camera Coordinates
+
+Other
+----------------------
+R - Stop/Start Rotation
+T - Stop/Change Axis of Rotation
+F - Waireframe
+G - Texture Material View mode
